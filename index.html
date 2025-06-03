@@ -11,6 +11,14 @@
   <div class="wrapper">
     <canvas class="background"></canvas>
     <header>
+      <div class="navigation__menu">
+        <svg id="arrow-back" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 25 25" ><path style="fill:#ffffff" d="M24 12.001H2.914l5.294-5.295-.707-.707L1 12.501l6.5 6.5.707-.707-5.293-5.293H24v-1z" data-name="Left"/></svg>
+        <ul class="navigation__menu__list">
+                    <li><a href="#technologies">About Me</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contacts</a></li>
+                </ul>
+      </div>
         <div class="content">
             <nav>
                 <h2 id="logo">Morva1n</h2>
@@ -19,11 +27,12 @@
                     <li><a href="">Projects</a></li>
                     <li><a href="">Contacts</a></li>
                 </ul>
+                 <svg id="burger-menu" style="fill: white;" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="36" height="36" viewBox="0 0 24 24">
+<path d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"></path></svg>
             </nav>
             <div class="header__content">
                 <h1>Hello world! I'm Roman <span id="robot">🤖</span></h1>
                 <h2>Full-Stack Developer</h2>
-                <!-- <h4 id="underline" style="color: rgba(255, 255, 255, 0.4);">-------------- ✶ --------------</h4> -->
                 <p>I just love creating something of my own</p>
                 <button>See more</button>
             </div>    
@@ -33,14 +42,9 @@
   </div>
   <main>
     <div class="content">
-      <div class="technologies">
-        <!-- <h2>Technologies</h2> -->
-        <div class="technologies__1">
-            <h3>Front-End</h3>
-        </div>
-        <div class="technologies__2">
-            <h3>Back-End</h3>
-        </div>
+      <div class="skills">
+        <h2>Skills:</h2>
+        <div class="technologies"></div>
       </div>
       <div class="projects">
         <div class="bloock">
@@ -51,9 +55,11 @@
   </main>
   <footer>
     <div class="content">
-      © 2025 Morva1n
+
+      <p>© 2025 Morva1n</p>
     </div>
   </footer>
   <script src="script.js"></script>
+  <script src="skills.js"></script>
 </body>
 </html>

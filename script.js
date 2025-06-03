@@ -1,6 +1,28 @@
 const canvas = document.querySelector('.background');
+const burger_menu = document.getElementById('burger-menu');
+const nav_menu = document.querySelector('.navigation__menu');
+const back = document.getElementById('arrow-back');
 const ctx = canvas.getContext('2d');
 let W, H;
+
+
+
+nav_menu.addEventListener('click', (e) =>{
+  console.log(e.target)
+})
+
+
+burger_menu.addEventListener('click', (e) =>{
+  nav_menu.style.display = 'block';
+} )
+
+back.addEventListener('click', (e) =>{
+  nav_menu.style.display = 'none';
+} )
+
+
+
+
 
 function resize() {
     W = window.innerWidth;

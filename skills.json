@@ -1,0 +1,67 @@
+[
+    {
+        "path": "./source/vectors/bootstrap.svg",
+        "name": "Bootstrap",
+        "color": "#563d7c"
+    },
+    {
+        "path": "./source/vectors/css.svg",
+        "name": "CSS",
+        "color": "#1172b8"
+    },
+    {
+        "path": "/source/vectors/html.svg",
+        "name": "HTML",
+        "color": "#e44d26"
+    },
+    {
+        "path": "./source/vectors/javascript.svg",
+        "name": "Javascript",
+        "color": "#f7df1e"
+    },
+    {
+        "path": "./source/vectors/mongodb.svg",
+        "name": "MongoDB",
+        "color": "#12ab52"
+    },
+    {
+        "path": "./source/vectors/mysql.svg",
+        "name": "Mysql",
+        "color": "#085060"
+    },
+    {
+        "path": "./source/vectors/nest.svg",
+        "name": "Nest.js",
+        "color": "#ff4c66"
+    },
+    {
+        "path": "./source/vectors/next.svg",
+        "name": "Next.js",
+        "color": "white"
+    },
+    {
+        "path": "./source/vectors/node.svg",
+        "name": "Node JS",
+        "color": "#8dc94b"
+    },
+    {
+        "path": "./source/vectors/react.svg",
+        "name": "React",
+        "color": "#01d8fe"
+    },
+    {
+        "path": "./source/vectors/redux.svg",
+        "name": "Redux",
+        "color": "#7146b5"
+    },
+    {
+        "path": "./source/vectors/tailwind.svg",
+        "name": "Tailwind",
+        "color": "#44a9b2"
+    },
+    {
+        "path": "./source/vectors/typescript.svg",
+        "name": "Typescript",
+        "color": "#007bcd"
+    }
+]

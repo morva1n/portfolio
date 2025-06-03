@@ -19,6 +19,42 @@ h1{font-size: 40px;}
     margin: 0 auto;
 }
 
+/* NAVIGATION LINE */
+
+
+.navigation__menu{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(46, 46, 46, 0.9);
+  z-index: 30;
+}
+
+#arrow-back{
+  position: absolute;
+  right: 15px;
+  top: 5px;
+}
+
+.navigation__menu__list{
+  position: relative;
+  list-style: none;
+  top: 15%;
+}
+
+.navigation__menu__list li{
+  text-align: center;
+  padding: 15px;
+}
+
+.navigation__menu__list a{
+  color: white;
+}
+
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -62,6 +98,14 @@ nav::before{
   transform: scale(1.1);
   transition: ease 0.3s;
 }
+
+#burger-menu{
+  display: none;
+}
+
+
+/* HEADER CONTENT */
+
 
 .background {
   position: absolute;
@@ -113,10 +157,21 @@ header {
   display: inline-block;
   right: 25%;
 }
+
+#robot{
+  display: inline-block;
+  position: relative;
+}
+
+#robot:hover{
+  transition: ease 0.7s;
+  transform: rotate(360deg);
+}
+
 .header__content p{margin-top: 50px;}
 
 
-
+/* MAIN CONTENT */
 
 
 main{
@@ -124,15 +179,46 @@ main{
     color: rgb(207, 201, 201);
 }
 
+.skills{
+  text-align: center;
+  padding-top: 35px;
+}
+
 
 .technologies{
   padding: 70px 0;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.techology{
+  width: 105px;
+  height: 105px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.techology:hover{
+  /* border-radius: 50px 10px 10px 50px; */
+  transform: scale(1.1);
+  transition: ease .6s;
+}
+
+.techology img{
+  position: relative;
+  bottom: -10px;
+}
+
+.techology p{
+  position: relative;
+  bottom: -30px;
+  font-size: 12px;
 }
 
 
-.technologies__1, .technologies__2{
+/* .technologies__1, .technologies__2{
   text-align: center;
   background-color: rgb(46, 46, 46);
   padding: 15px;
@@ -144,41 +230,88 @@ main{
 .technologies__1:hover, .technologies__2:hover{
   transform: scale(1.05);
   transition: ease 0.5s;
-}
+} */
 
 
 
-
+/* FOOTER COONTENT */
 
 footer{
-  height: 120px;
   text-align: center;
   background-color: rgb(46, 46, 46);;
 }
 
-
-#robot{
-  display: inline-block;
-  position: relative;
-  /* position: fixed;
-  right: 0;
-  margin: 15px;
+footer p{
   color: white;
-  z-index: 11; */
 }
 
-#robot:hover{
-  transition: ease 0.7s;
-  transform: rotate(360deg);
+/* @media (max-width: 620px){
+  .header__content h2{
+    position: static;
+    text-align: left;
+  }
+  .navigation{
+    display: none;
+  }
+  nav::before{
+    display: none;
+  }
+
+  .technologies{
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 20px;
+  }
+  #burger-menu{
+    display: block;
+  }
+} */
+
+
+
+@media (max-width: 480px) {
+    nav::before{
+    display: none;
+  }
+  .navigation{
+    display: none;
+  }
+
+  .header__content h2{
+    position: static;
+  }
+  #burger-menu{
+    display: block;
+  }
 }
 
 
-/* @keyframes anim{
-  from{
-    transform:;
+@media (min-width: 481px) and (max-width: 767px) {
+  nav::before{
+    display: none;
   }
-  to{
-    transform: scaleX(2);
+
+  .navigation{
+    display: none;
   }
+
+  .header__content h2{
+    position: static;
+
+  }
+
+  #burger-menu{
+    display: block;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  nav::before{
+    display: none;
+  }
+}
+
+/* @media (min-width: 1024px) and (max-width: 1279px) {
 
 } */
