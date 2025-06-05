@@ -1,12 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
+    /* font-family: "Alumni Sans SC", sans-serif;    он будет для слайдерами с технологиями  */
+    /* font-family: "Saira", sans-serif; */
+
 }
 
 html{scroll-behavior: smooth;}
 a{text-decoration: none;}
-h1{font-size: 40px;}
+h1{font-size: 55px;}
 
 .wrapper {
   position: relative;
@@ -103,7 +117,6 @@ nav::before{
   display: none;
 }
 
-
 /* HEADER CONTENT */
 
 
@@ -121,29 +134,26 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   z-index: 1;
   color: white;
   padding: 20px;
   box-sizing: border-box;
 }
 
-.header__content{
-  max-height: 300px;
-  text-align: center;
-  position: relative;
-  top: 200px;
-}
-
 .header__content button{
   padding: 10px;
-  width: 120px;
-  margin-top: 125px;
+  width: 140px;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 85px;
   color: white;
   background: none;
   border: 2px solid white;
 }
 
 .header__content button:hover{
+  content: "s";
   transform: scale(1.1);
   transition: ease 0.3s;
   background-color: white;
@@ -152,11 +162,41 @@ header {
 
 .header__content h2{
   color: rgb(202, 90, 90);
-  position: absolute;
-  top: 50px;
+  position: relative;
   display: inline-block;
-  right: 25%;
+  right: 0;
 }
+
+.header__content{
+  padding-top: 40px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 
+.header__content img{
+  animation: 5s mercury3 infinite linear;
+}
+
+@keyframes mercury3 {
+  0% {
+    transform: translate(10px, 0);
+  }
+  25% {
+    transform: translate(0, 10хч);
+  }
+  50% {
+    transform: translate(-10px, 0);
+  }
+  75% {
+    transform: translate(0, -10px);
+  }
+  100% {
+    transform: translate(10px, 0);
+  }
+}
+ */
 
 #robot{
   display: inline-block;
@@ -168,7 +208,6 @@ header {
   transform: rotate(360deg);
 }
 
-.header__content p{margin-top: 50px;}
 
 
 /* MAIN CONTENT */
@@ -177,31 +216,37 @@ header {
 main{
     background-color: rgb(23, 23, 23);
     color: rgb(207, 201, 201);
+    overflow: hidden;
 }
 
 .skills{
   text-align: center;
-  padding-top: 35px;
+  padding: 50px 0;
 }
 
+.skills .content{
+  overflow: hidden;
+}
 
-.technologies{
-  padding: 70px 0;
+.technologies__list{
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 22px;
 }
 
 .techology{
-  width: 105px;
-  height: 105px;
+  background-color: rgb(55, 55, 55);
+  min-width: 120px;
+  height: 120px;
   text-align: center;
   border-radius: 15px;
 }
 
 .techology:hover{
-  /* border-radius: 50px 10px 10px 50px; */
   transform: scale(1.1);
   transition: ease .6s;
 }
@@ -214,24 +259,51 @@ main{
 .techology p{
   position: relative;
   bottom: -30px;
-  font-size: 12px;
+  font-family: "Alumni Sans SC", sans-serif;
+  font-size: 16px;
 }
 
 
-/* .technologies__1, .technologies__2{
+.projects{
+  background-color: rgb(39, 39, 39);
   text-align: center;
-  background-color: rgb(46, 46, 46);
-  padding: 15px;
-  width: 400px;
-  height: 250px;
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+  padding: 50px 0;
 }
 
-.technologies__1:hover, .technologies__2:hover{
-  transform: scale(1.05);
-  transition: ease 0.5s;
-} */
+.projects__list{
+  display: flex;
+  padding: 30px 0;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
 
+}
+
+.project{
+  width: 240px;
+  height: 240px;
+  overflow: hidden;
+}
+
+.project:hover{
+  filter: brightness(50%);
+  transition: ease .4s;
+}
+
+.project__img{
+  width: 100%;
+  height: 100%;
+  background-image: url('/source/project.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.contacts{
+  text-align: center;
+  padding: 50px 0;
+}
 
 
 /* FOOTER COONTENT */
@@ -245,29 +317,9 @@ footer p{
   color: white;
 }
 
-/* @media (max-width: 620px){
-  .header__content h2{
-    position: static;
-    text-align: left;
-  }
-  .navigation{
-    display: none;
-  }
-  nav::before{
-    display: none;
-  }
-
-  .technologies{
-    flex-wrap: wrap;
-    width: 90%;
-    gap: 20px;
-  }
-  #burger-menu{
-    display: block;
-  }
-} */
 
 
+/* media response */
 
 @media (max-width: 480px) {
     nav::before{
@@ -295,10 +347,29 @@ footer p{
     display: none;
   }
 
+  .header__content{
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .header__content h1{
+    font-size: 25px;
+  }
+
   .header__content h2{
     position: static;
 
   }
+
+  .header__content img{
+    width: 300px;
+    height: 300px;
+  }
+
+  .header__content button{
+    margin: 20px auto;
+  }
+  
 
   #burger-menu{
     display: block;

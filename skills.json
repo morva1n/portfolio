@@ -1,10 +1,5 @@
 [
     {
-        "path": "./source/vectors/bootstrap.svg",
-        "name": "Bootstrap",
-        "color": "#563d7c"
-    },
-    {
         "path": "./source/vectors/css.svg",
         "name": "CSS",
         "color": "#1172b8"
